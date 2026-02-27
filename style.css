@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Delius&family=Poetsen+One&display=swap');
 
 body {
-  background-image: url("https://cdn.mos.cms.futurecdn.net/HuGGeENt6kGyixe3hT9tnY.jpg");
+  background-image: url("https://paulstriptothemovies.com/wp-content/uploads/2022/04/Hard-Days-Night.jpeg");
   text-align: center;
   margin: auto;
    font-family: "Poetsen One", serif;
@@ -9,8 +9,16 @@ body {
 
 h1{
   font-size: 30px;
-  color: white;
-}
+  color: rgb(0, 0, 0);
+
+    display: flex;
+  flex-wrap: wrap;
+  background-color:rgba(255, 255, 255, 0.75);
+  justify-content: space-around;
+  align-items: flex-start;
+  border-radius: 30px;
+  }
+
 
 #myCanvas {
   background-size: 600px 400px;

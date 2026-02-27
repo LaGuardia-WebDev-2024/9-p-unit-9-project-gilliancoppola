@@ -9,7 +9,7 @@ var forestImage = loadImage("https://t3.ftcdn.net/jpg/02/50/39/72/360_F_25039720
 
 //Variable Declarations
 var sceneImage = caveSceneImage;
-var sceneText = "Where do you want to go?  [Press f for forest and c for cave]";
+var sceneText = "Let's find where Ringo ran away.  [Press f for forest and c for cave]";
 
 draw = function(){
     
