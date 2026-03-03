@@ -13,7 +13,7 @@ var storeImage = loadImage("storeringo.PNG");
 
 //Variable Declarations
 var sceneImage = caveSceneImage;
-var sceneText = "You are leaving. Where to?  [Press t for street and w for water]";
+var sceneText = "Ringo is leaving. Where to?  [Press t for street and w for water]";
 
 draw = function(){
     
@@ -23,19 +23,19 @@ draw = function(){
    if(keyPressed){
      if(key == 't'){
        sceneImage = streetImage;   
-       sceneText = "You're walking, but you get chased by fans!  [Press e to escape]";
+       sceneText = "He's walking, but he gets chased by fans!  [Press e to escape]";
      } 
    }
 
 if(keyPressed){
    if(key == 'e'){
        sceneImage = storeImage;   
-       sceneText = "You got to the store, and got a disguise. [Press w to go to water]";
+       sceneText = "He got to the store, and got a disguise. [Press w to go to water]";
 }
 
      if(key == 'w'){
       sceneImage = waterImage;
-      sceneText = "You tried to take a photo by the water. Didn't work. [Press ]";
+      sceneText = "He tried to take a photo by the water. Didn't work. [Press ]";
     } 
    }
   
