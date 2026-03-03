@@ -21,7 +21,7 @@ var kidImage = loadImage("kidringo.PNG");
 
 //Variable Declarations
 var sceneImage = caveSceneImage;
-var sceneText = "Ringo is leaving. Where to?  [Press t for street and l for the river]";
+var sceneText = "Ringo is leaving rehearsals. Where to?  [Press t for the street and \n   l for the river]";
 
 draw = function(){
     
