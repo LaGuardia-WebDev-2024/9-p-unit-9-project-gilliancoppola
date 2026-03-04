@@ -19,13 +19,21 @@ var relaxImage = loadImage("relaxringo.PNG");
 
 var kidImage = loadImage("kidringo.PNG");
 
+var blackImage = loadImage("black-background-1365087945eJf.jpg");
+
+var talkImage = loadImage("talkringo.PNG");
+
+var pubImage = loadImage("pubringo.PNG");
+
+var beatlesImage = loadImage("beatlesringo.PNG");
+
 //Variable Declarations
 var sceneImage = caveSceneImage;
 var sceneText = "Ringo is leaving rehearsals. Where to?  [Press t for the street and \n   l for the river]";
 
 draw = function(){
     
-   drawScene();
+   drawScene(); 
 
 //street
    if(keyPressed){
@@ -69,20 +77,47 @@ if(keyPressed){
 //relax
 if(key == 'x'){
       sceneImage = relaxImage;
-      sceneText = "Ringo lays down by the river. He drifts off to sleep...";
+      sceneText = "Ringo lays down by the river. He drifts off to sleep... [Click and \n  hold the screen]";
     };
 
 //kid comes for tire
     if(key == 'g'){
       sceneImage = kidImage;
-      sceneText = "Some kid was playing with the tire and wants it back! [Press k to \ntalk to the kid and d to leave and go to the diner]";
+      sceneText = "Some kid was playing with the tire and wants it back! [Press k to \ntalk to the kid and p to leave and go to the pub]";
     } 
 
-//talk to kid (then to END)
+//fall asleep
+if(mousePressed && sceneImage==relaxImage){
+  sceneImage = blackImage;
+}
 
-//diner (then to END)
+//talk to kid (then to END)
+if(key == 'k'){
+      sceneImage = talkImage;
+      sceneText = "He's a deserter, skipping school, like how you're skipping work... \n[Press b to go back to the Beatles and p to go to the pub]";
+    } 
+
+//pub (then to END)
+if(key == 'p'){
+      sceneImage = pubImage;
+      sceneText = "Ringo causes a bit of a scene at the pub. He'd really better get \n back to work... [Press b to go back to the Beatles]";
+    } 
 
 //go back to the Beatles (END, comes from either choice)
+if(key == 'b'){
+      sceneImage = beatlesImage;
+      sceneText = "Back to the Beatles at long last! What a great show. [Click and \n hold the screen]";
+    } 
+
+if(mousePressed && sceneImage==beatlesImage){
+  textSize(random(50, 145));
+  fill(255, 58, 23);
+  text("♫♪",random(0,550),random (0,350));
+
+  textSize(random(50, 120));
+  fill(33, 26, 112);
+  text("♫♪",random(0,550),random (0,350));
+}
 
 };
 
