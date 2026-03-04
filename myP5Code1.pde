@@ -63,14 +63,14 @@ if(keyPressed){
   //gettripped
     if(key == 'c'){
       sceneImage = tripImage;
-      sceneText = "A tire rolls along and trips him up! [Press g to get back up]";
+      sceneText = "Oh no! A tire rolls along and trips him up. [Press g to get back up]";
     } 
 
 //relax
 if(key == 'x'){
       sceneImage = relaxImage;
       sceneText = "Ringo lays down by the river. He drifts off to sleep...";
-    } 
+    };
 
 //kid comes for tire
     if(key == 'g'){
