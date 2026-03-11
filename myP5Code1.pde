@@ -94,7 +94,7 @@ if(mousePressed && sceneImage==relaxImage){
 //talk to kid (then to END)
 if(key == 'k'){
       sceneImage = talkImage;
-      sceneText = "He's a deserter, skipping school, like how you're skipping work... \n[Press b to go back to the Beatles and p to go to the pub]";
+      sceneText = "He's a deserter, skipping school, like how Ringo is skipping work... \n[Press b to go back to the Beatles and p to go to the pub]";
     } 
 
 //pub (then to END)
